@@ -4,22 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendiendo JQuery</title>
-  <!-- <script
+<!-- <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNf0u91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>--> 
     <script src="js/jquery-3.5.1.min.js"></script>
-    </script>
-    <script>
-        $(document).ready(function(){
-            console.log("JQuery y la web funcionan");
-        });
-    </script>
+    <script src="js/01-selectores.js"></script>
+    <style>
+            .zebra{
+                border: 5px dashed black;
+            }
+            .grande{
+                font-size: 30px;
+            }
+            .margen-superior{
+                display:block;
+                margin-top: top 60px;
+            }
+            .resaltado{
+                border-bottom: 2px solid brown;
+            }
+    </style>
+    
 </head>
 <body>
     <h1>aprendiendo JQuery</h1>
-    <p>Ejercicios de JQuery</p>
+    <ul>
+        <li><a href="https://www.google.com" title="Google">Ir a google</a></li>
+        <li><a href="https://www.facebook.com" title="facebook">Ir a facebook</a></li>
+    </ul>
+    <p id="rojo" class="Sinborde">Ejercicios de JQuery</p>
+    <p id="amarillo"class="zebra">Practicando con Selectores</p>
+    <p id="verde" class="Sinborde" >Quiero ser un parrafo verde</p>
+    <p class="zebra">Soy un parrafo blanco</p>
 
-   
+    <div id="caja">
+        <p>hola soy una caja</p>
+        <ul>
+            <li>elemento1</li>
+            <li class="resaltado">Elemento2</li>
+        </ul>
+        <span class="resaltado">Soy un span</span>
+    </div>
+
 </body>
 </html>
