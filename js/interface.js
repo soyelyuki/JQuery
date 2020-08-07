@@ -28,4 +28,18 @@ $(document).ready(function(){
         //efectos togle, explode, drop, fold,y monton deefectos
         
     }) 
+    //tooltip
+    $(document).tooltip();
+
+    //Dialog
+    $("#lanzar-popup").click(function(){
+        $("#popup").dialog();
+    })
+    
+    //datepicker
+    $("#calendario").datepicker();
+
+    //tabs
+    $("#pestanas").tabs();
+
 });
